@@ -1,0 +1,6 @@
+# dsh-session-ledger bundle layer: mounted by `dsh plugin add`, so a profile
+# gets this row without manual cordis.patch.yml edits.
+
+- insert:
+    - id: session-ledger
+      name: dsh-session-ledger

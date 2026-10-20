@@ -1,0 +1,38 @@
+{
+  "name": "dsh-session-ledger",
+  "version": "0.1.0",
+  "description": "会话台账：主索引记录每个会话的一句话总结，详细留底记录项目结构/过程/时间/环境配置；左上角悬浮图标可展开查看历史会话与归档状态。",
+  "license": "MIT",
+  "author": "DSH 用户",
+  "type": "module",
+  "main": "entry.js",
+  "exports": {
+    ".": "./entry.js",
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "src",
+    "cordis.patch.yml",
+    "entry.js",
+    "package.json"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": "*"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
