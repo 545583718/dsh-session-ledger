@@ -1,5 +1,7 @@
 # dsh-session-ledger · 会话台账 / Session Ledger
 
+**项目状态 / Project status：未完成 / In progress**
+
 给 DSH 加一个「会话台账」：记录每个会话的一句话总结与详细留底，左上角一个悬浮图标，点开就能看到历史会话列表和归档状态。
 
 A floating-widget session ledger for DSH: each session gets a one-line summary plus a detailed archive, browsable from a draggable widget in the top-left corner.
